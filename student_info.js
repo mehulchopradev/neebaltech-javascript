@@ -18,7 +18,8 @@
 // call these two functions with sample student data
 
 // const student_ops = require('./lib/student_ops.js');
-import student_ops from './lib/student_ops.js';
+// import o from './lib/student_ops.js';
+import { getDetails, getGrade } from './lib/student_ops.js';
 
 // procedural style
 const name = 'mehul';
@@ -26,8 +27,10 @@ const gender = 'm';
 const marks = 34;
 const roll = 10;
 
-console.log(student_ops.getDetails(name, gender, roll, marks));
-console.log(student_ops.getGrade(marks));
+// console.log(student_ops.getDetails(name, gender, roll, marks));
+// console.log(student_ops.getGrade(marks));
+console.log(getDetails(name, gender, roll, marks));
+console.log(getGrade(marks));
 
 // object oriented programming style
 // 1. Real world actors (Student)  ------- Software as entities (data in the RAM) ----- Objects in the RAM
