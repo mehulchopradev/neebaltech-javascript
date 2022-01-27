@@ -12,7 +12,8 @@ class Student {
     return `Name: ${this.name}\nGender: ${this.gender}\nRoll: ${this.roll}\nMarks: ${this.marks}`;
   }
 
-  getGrade() {
+  getGrade = () => {
+    // arrow functions remember the surrounding context under which they were created
     // this
     let grade;
     const marks = this.marks;
