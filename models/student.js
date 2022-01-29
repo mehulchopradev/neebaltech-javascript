@@ -1,15 +1,19 @@
-class Student {
+// Student IS-A CollegeUser
+import CollegeUser from "./college_user.js";
+
+class Student extends CollegeUser {
   constructor(name, gender, roll, marks) {
     // object reference --- implicit variable --- this (current object)
-    this.name = name;
-    this.gender = gender;
+    super(name, gender); // CollegeUser.constructor(name, gender, this);
+
     this.roll = roll;
     this.marks = marks;
   }
 
+  // method overriding
   getDetails() {
     // object reference --- implicit variable --- this (current object)
-    return `Name: ${this.name}\nGender: ${this.gender}\nRoll: ${this.roll}\nMarks: ${this.marks}`;
+    return `${super.getDetails()}\nRoll: ${this.roll}\nMarks: ${this.marks}`;
   }
 
   getGrade = () => {

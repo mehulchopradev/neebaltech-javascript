@@ -23,6 +23,7 @@ console.log(s2); */
 // create Student objects from the Student class
 
 import Student from "./models/student.js";
+import Professor from "./models/professor.js";
 
 // const s1 = new Student();
 // Internally
@@ -86,3 +87,17 @@ console.log(country);
 // Student.getGrade(s2)
 
 // console.log(s1.getGrade());
+
+const p1 = new Professor('mehul chopra', 'm', ['Physics', 'Chemistry']);
+// new --> 7008
+// Professor.constructor('mehul', 'm', ['Physics', 'Chemistry'], 7008)
+
+// Name: mehul
+// Gender: m
+// Roll: 10
+// Marks: 90
+console.log(s1.getDetails());
+
+// Name: mehul
+// Gender: m
+console.log(p1.getDetails());
