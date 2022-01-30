@@ -5,12 +5,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'test/**/*.js'"
   },
   "author": "mehul chopra",
   "license": "ISC",
   "dependencies": {
     "dayjs": "^1.10.7",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
   }
 }

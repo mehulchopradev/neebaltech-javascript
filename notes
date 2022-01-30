@@ -1,0 +1,4 @@
+- The main nodejs program runs on a single thread (Event loop)
+- Nodejs program : Queues
+  - Timers queue : stores all the callbacks of setTimeout and setInterval methods that need to be executed on the event loop
+  - IO callbacks queue: stores all the callbacks of completed IO operations(by the libuv threads) that now need to be executed on the event loop

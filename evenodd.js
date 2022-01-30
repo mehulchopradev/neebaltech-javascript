@@ -1,4 +1,4 @@
-const n = 12;
+const n = 0;
 
 // if - else block
 /* if (n % 2 === 0) {
