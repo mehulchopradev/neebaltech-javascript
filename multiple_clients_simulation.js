@@ -56,6 +56,14 @@ function processRequest(path, n) {
   console.log(`******* Process Request completely processed for client ${clientId} ****************`);
 }
 
+function anotherRequest(n) {
+  clientId++;
+  console.log(`******* Another Request being processed for client ${clientId} ****************`);
+  const a = fibo(n);
+  console.log('Fibonacci series', a);
+  console.log(`******* Another Request completely processed for client ${clientId} ****************`);
+}
+
 setTimeout(() => {
   processRequest('package.json', 100);
 }, 0);
@@ -74,4 +82,8 @@ setTimeout(() => {
 
 setTimeout(() => {
   processRequest('rectangle.js', 500);
+}, 0);
+
+setTimeout(() => {
+  anotherRequest(10);
 }, 0);
